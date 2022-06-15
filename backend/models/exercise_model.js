@@ -3,18 +3,18 @@ import mongoose from "mongoose";
 
 const exercise=mongoose.Schema({
     username:{type:String,required:true},
-    desription:{type:String,required:true},
+    description:{type:String,required:true},
     duration:{type:Number,required:true},
     date:{type:Date,required:true}
 },
 
     {
-        timestamp:{}
+        timestamps:true
     }
 )
 
 const Exercise=mongoose.model("Exercise",exercise)
 
-module.exports=Exercise
+export default Exercise;
 
 

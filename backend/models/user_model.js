@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 const user=mongoose.Schema({
-    userName:{
+    username:{
         type:String,
         required:true,
         unique:true,
@@ -9,7 +9,7 @@ const user=mongoose.Schema({
         trim:true
     }},{
     
-    timestamp:true}
+    timestamps:true}
 )
 
 const User=mongoose.model('User',user)
