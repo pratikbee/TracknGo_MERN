@@ -11,7 +11,12 @@ export const findUsers=async(req,res)=>{
 
 export const addUser=async(req,res)=>{
     const username=req.body.username;
-    const newUser=User({username})
+    console.log(username)
+   
+    
+    
+    
+    const newUser=User({"username":username})
     try{
        newUser.save().then(()=>{res.json("user Added")});
              
@@ -24,10 +29,7 @@ export const addUser=async(req,res)=>{
     
     
     
-//     newUser.save()
-//     .then(()=>res.json("User added"))
-//     .catch((err)=>res.json(err))
-// 
+
 }
 
 

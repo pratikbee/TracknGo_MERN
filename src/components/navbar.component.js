@@ -8,7 +8,7 @@ const NavBar=()=>{
         return(
             
             <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
-                 <Link to="/" className="navbar-brand" style={{marginLeft:40}}>ExcerTracker</Link>
+                 <Link to="/" className="navbar-brand" style={{marginLeft:40}}>TrackNGo</Link>
                     <div style={{flex:1,flexDirection:"row"}}>
                         <ul className="navbar-nav mr-auto" style={{flexDirection:'row',gap:30,marginLeft:30}}>
                             <li className="navbar-item">

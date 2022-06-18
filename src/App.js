@@ -17,7 +17,7 @@ function App() {
     <br/>
     <Routes>
     <Route path="/" exact element={<ExercisesList></ExercisesList>}/>
-    <Route path="/edit:id" element={<EditExercise></EditExercise>}/>
+    <Route path="/edit/:id" element={<EditExercise></EditExercise>}/>
     <Route path="/create" element={<CreateExercise></CreateExercise>}/>
     <Route path="/user" element={<CreateUser></CreateUser>}/>
     </Routes>
